@@ -1,6 +1,9 @@
 const sizeString : string = process.argv[2]
 const size : number = parseInt(sizeString);
 
+if (Number.isNaN(size) || size < 0){
+    console.log("Invalid Input");
+}
 for (let i = 0 ; i < size ; i++){
   let row =""
 
